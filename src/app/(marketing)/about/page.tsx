@@ -32,11 +32,12 @@ export default function Home() {
         {
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${process.env.NEXT_OPENAI_KEY}`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_OPENAI_KEY}`,
           },
         },
       )
       if (response.data && response.data.data) {
+        console.log('🚀 ~ file: page.tsx:40 ~ handleSubmit ~ response.data.data:', response.data.data)
         setImageURLs(response.data.data)
       }
       setLoading(false)
@@ -72,7 +73,7 @@ export default function Home() {
           <div className="flex flex-wrap">
             <div className="w-1/2 py-2 pr-4">
               <h2 className="block text-sm font-medium leading-6 text-gray-900">
-                生成したい画像の内容（英語：例 a cat sitting on the couch）：
+                生成したい画像の内容（英語：例 dog sleeping bed）：
               </h2>
               <textarea
                 rows={4}
