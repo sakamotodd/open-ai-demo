@@ -61,11 +61,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Next.js で作る OpenAI 画像生成アプリ</title>
+        <title>画像生成アプリ</title>
         <meta name="description" content="AI が画像を生成します" />
       </Head>
 
-      <h1 className="m-5 text-2xl font-bold leading-3 text-gray-900">Next.js で作る OpenAI 画像生成アプリ</h1>
+      <h1 className="m-5 text-2xl font-bold leading-3 text-gray-900">画像生成アプリ</h1>
 
       <div className="mx-4 my-2 flex-auto rounded-md bg-white p-4 shadow">
         <form onSubmit={handleSubmit}>
@@ -84,9 +84,7 @@ export default function Home() {
 
             <div className="w-1/2 py-2 pl-4">
               <div>
-                <h2 className="block text-sm font-medium leading-6 text-gray-900">
-                  生成する画像の数（1 - 10 で指定）:
-                </h2>
+                <h2 className="block text-sm font-medium leading-6 text-gray-900">画像の数（1 - 10指定）:</h2>
                 <input
                   type="number"
                   min="1"
