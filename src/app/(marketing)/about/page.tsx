@@ -37,7 +37,6 @@ export default function Home() {
         },
       )
       if (response.data && response.data.data) {
-        console.log('🚀 ~ file: page.tsx:40 ~ handleSubmit ~ response.data.data:', response.data.data)
         setImageURLs(response.data.data)
       }
       setLoading(false)
