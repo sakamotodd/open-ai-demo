@@ -37,6 +37,7 @@ export default function Home() {
         },
       )
       if (response.data && response.data.data) {
+
         setImageURLs(response.data.data)
       }
       setLoading(false)
